@@ -1,0 +1,65 @@
+.header {
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+.secondHeader 
+{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+    text-align: center;    
+    font-size: 18px;
+}
+
+h1 
+{
+    font-size: 45px;
+}
+
+img 
+{
+    margin-top: 30px;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.bodyText 
+{
+    color: black;
+    padding-top: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+ion-icon 
+{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 95px;
+  }
+
+
+
+body 
+{
+    background-color: #CEE2F9;
+    opacity: 1;
+  }
+
+
