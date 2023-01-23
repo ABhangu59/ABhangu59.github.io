@@ -82,8 +82,7 @@ body
 {
     background-color: #CEE2F9;
 opacity: 1;
-background: linear-gradient(135deg, #bfc4ca55 25%, transparent 25%) -15px 0/ 30px 30px, linear-gradient(225deg, #bfc4ca 25%, transparent 25%) -15px 0/ 30px 30px, linear-gradient(315deg, #bfc4ca55 25%, transparent 25%) 0px 0/ 30px 30px, linear-gradient(45deg, #bfc4ca 25%, #CEE2F9 25%) 0px 0/ 30px 30px;
-  }
+}
 
 
 
