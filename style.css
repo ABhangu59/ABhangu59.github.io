@@ -1,10 +1,10 @@
 .header {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 5px;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
   }
 
 .secondHeader 
@@ -12,7 +12,7 @@
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 15px;
-    text-align: center;    
+    text-align: auto;    
     font-size: 18px;
 }
 
@@ -25,8 +25,8 @@ img
 {
     margin-top: 30px;
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 225px;
+    width: 225px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -37,21 +37,43 @@ img
 {
     color: black;
     padding-top: 0px;
-    padding-left: 60px;
-    padding-right: 60px;
-    text-align: center;
+    padding-left: 85px;
+    padding-right: 85px;
+    text-align: center  ;
     font-size: 18px;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    margin : 1px;
 
 }
 
+.head3 
+{
+    padding-top: 5px;
+    padding-right: 60px;
+    text-align: auto;
+    font-size: 24px;
+}
+
+.aboutMe 
+{
+    color: black;
+    padding-top: 0px;
+    padding-left: 85px;
+    padding-right: 85px;
+    text-align: auto;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin : 1px;
+
+}
 
 ion-icon 
 {
-    display:flex;
+    display:inline-flex;
     margin-left: auto;
     margin-right: auto;
-    font-size: 95px;
+    padding-left: 60px;
+    font-size: 105px;
   }
 
 
@@ -59,7 +81,10 @@ ion-icon
 body 
 {
     background-color: #CEE2F9;
-    opacity: 1;
+opacity: 1;
+background: linear-gradient(135deg, #bfc4ca55 25%, transparent 25%) -15px 0/ 30px 30px, linear-gradient(225deg, #bfc4ca 25%, transparent 25%) -15px 0/ 30px 30px, linear-gradient(315deg, #bfc4ca55 25%, transparent 25%) 0px 0/ 30px 30px, linear-gradient(45deg, #bfc4ca 25%, #CEE2F9 25%) 0px 0/ 30px 30px;
   }
 
 
+
+  
