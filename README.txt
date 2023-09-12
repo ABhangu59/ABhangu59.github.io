@@ -1,6 +1,5 @@
-Hello, my name is Ali Raza Bhangu. 
+Hi, my name is Ali Raza Bhangu. I'm a third year Honours CS student at uOttawa.
 
-In this repo you'll find the code for my personal portfolio website, which is a work in progress as of right now.
+Still on the journey of learning web development, this website is one of my first web-dev projects
 
-
-2023-01-22
+2023-09-12

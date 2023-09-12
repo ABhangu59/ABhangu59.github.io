@@ -1,103 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ali Raza Bhangu's Website</title>
-
-    <!-- CSS Style Sheets-->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Bhangu's Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-
-  
-
   <body>
 
-    <img src="alibhangu.jpeg" alt="Ali Bhangu">
-
-
-    <main>
-      <div class = "header">
-        <h1>Hey, I'm Ali Raza Bhangu!</h1>
-      </div>      
-      
-
-
-      <div class = "bodyText">
-        <p>
-          I'm Ali Raza Bhangu, a second-year Computer Science student at the University of Ottawa. I am an extremely
-          motivated and driven individual, with a passion for continous learning. I currently volunteer at numerous 
-          student organizations at the University of Ottawa. I'm the <b>Vice President of Financial Affairs </b> for the Computer
-          Science Student Association and a <b>Co-Director of Finance </b> for Hack the Hill! 
-        </p>
-        <br>
+    <nav id="desktop-nav">
+      <div class="logo">Ali Bhangu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+    </nav>
 
-      <div class = "aboutMe" >
-        <div class = "head3">
-          <h1><u>About Me</u></h1>
+    <nav id="hamburger-nav">
+      <div class="logo">Ali Bhangu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id = "profile">
+        <div class = "section_pic-container">
+            <img src ="alibhangu.png" alt = "Ali Bhangu PFP">
+        </div>
+
+        <div class="section_text">
+            <p class = "section-text-p1">Hey, I'm</p>
+            <h1 class="title">Ali Raza Bhangu</h1>
+            <avaiable class = "section-text-p2">Third Year Computer Science Student at uOttawa, </p>
+            <div class = "btn-container"> 
+                <button class ="btn btn-color-2" onclick="window.open('AliBhangu_Resume2023.pdf')">Get My Resume</button>
+                
+            </div>
+
+            <div class = "btn-container"> 
+                <button class ="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
+            </div>
+
+            <div id="socials-container">
+                <img 
+                src="linkedin.png" 
+                alt = "Linkedin Profile"
+                class = "icon" 
+                onclick="location.href='https://www.linkedin.com/in/alirazabhangu/'"
+                />
+
+                <img 
+                src="github.png" 
+                alt = "Github Profile"
+                class = "icon" 
+                onclick="location.href='https://github.com/ABhangu59'" 
+                />
+                
+            </div>
 
         </div>
-        <p>Here is some more information about me!:
-          <h3>Why Computer Science?</h3>
-          <ul>
-              <li> I chose computer science because of my older sister, who pursued Computer Science at another post-secondary institute, 
-                I would always see the work she was doing and find it intriguing. It was once I started developing myself in highschool that
-                I found out that I thoroughly enjoy the feeling of creating something from nothing but abstract ideas. The field of Computer Science also has one of the 
-                best outlook out of any fields and it allows me to mix in my hobbies, such as finance, with my career!
-              </li>
-          
-          </ul>
-        <h3>Skills</h3>
-        <ul>
-              <li>Programming Languages: Java, Python, SQLite, and I've started working on these languages too: SQL, GoLang, Scheme</li>
-              <li>Excellent Time Management and Communicational Skills</li>
-              <li>Problem Solving</li>
-              <li>Advanced understanding of the object-oriented paradigm, data structures and algorithims, and design patterns in Java</li>
-              <li>Microsoft Office Suite</li>
-              <li>Familiarity with APIs, SQL, and database architechture concepts</li>
-        </ul>
 
-          </list>
-        </p>
-      </div>
+    </section>
+
+    <section id="about">
+        <p class = "section-text-p1">Get To Know More</p>
+        <h1 class = "title">About Me</h1>
         
-
-    </main>
-	<script src="index.js"></script>  
-  </body>
-  <br>
-  <div class = "secondHeader">
-    <h1><u>Get In Touch</u></h1>
-    <p><b>I am avaliable to work for 4 months beginning May 2023</b>
-      <br>
-      Access my <b>LinkedIn, Github, or Resume by clicking on the icons below</b> feel free
-      to reach out to me via email at <b>alibhangu1@outlook.com</b>
-    </p>
-  </div>
-
-</div class = "SocialIcons"> 
-  
-<a href = "https://www.linkedin.com/in/ali-raza-bhangu-061274214/" target = "_blank">
-  <ion-icon name="logo-linkedin"></ion-icon>
-</a>
-
-<a href = "https://github.com/ABhangu59" target = "_blank">
-  <ion-icon name="logo-github"></ion-icon>
-</a>
-
-<a href = "AliRazaBhangu_Resume2023_V2.pdf" target = "_blank">
-  <ion-icon name="reader"></ion-icon> 
-</a>
-
-</div>
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div class = "about-details-container">
 
 
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <img src ="experience.png" alt="experienceicon" class="icon" />
+                    <h3> Experience </h3>
+                    <p>8+ months of experience <br /> Volunteering in numerous campus extra-curriculars
+                        <li>Vice President of Academics at Computer Science Student Association</li>
+                        <li>Vice President of Social Affairs at IEEE uOttawa</li>
+                        <li>Director of Community at Hack the Hill, Ottawa's Largest Hackathon </li>
+                        <li>uOttawa's Faculty of Engineering Faculty Council Member</li>
+                    </p>
+                </div>
+                <div class = "details-container">
+                    <img src ="education.png" alt="Education Icon" class="icon" /> 
+                    <h3>Education</h3>
+                    <p>Honours B.Sc. in Computer Science at uOttawa <br /> Sep. 2021 - Dec. 2025</p> <br /> 3.5/4.0 GPA 
+                </div>
 
-</html>
+                
+
+
+            </div > 
+
+            
+
+             <div class = "text-container"> 
+                <p> Hello and welcome to my corner of the internet! My name is Ali Raza Bhangu, but you can call me Ali. I am a driven third year Computer Science student at the University of Ottawa, driven
+                    by a desire to continue learning the evergrowing technologies that exist within the field of software. I have been described as a creative problem solver and a quick learner. I always tackle problems
+                    with a meticilous approach and I'm always on the hunt for new solutions. My goal is to help bridge the gap betwen the digital and physical worls. I firmly believe that technology, when wielded responsibly, can drive change and
+                    I aspire to harness these technologies to create innovative solutions that simplify our lives and solve real world problems. 
+                        <br/> <br/>
+                         When I'm not immersed in lines of codes or coursework, you can find me experimenting with new programming languages, or volunteering around the University of Ottawa in a bunch of diffrent organizations and engineering societies. My love for technology extends beyond the screen, with my newest hobby being robotics! 
+                    <br/>I'm currently finishing an ungraduate degree in Honours Computer Science from the University of Ottawa and I'm available to work this upcoming winter from January 2024 to May 2024. 
+                </p> 
+
+                </div> 
+
+        </div>
+
+        <img src="arrow.png" alt = "Arrow Icon" class ="icon arrow" onclick="location.href='#experience'" /> 
+            
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Development Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Moderate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Golang</h3>
+                    <p>Moderate</p>
+                  </div>
+                </article>
+                <article>
+                    <img
+                      src="checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Azure DevOps</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+
+
+                <article>
+                    <img
+                      src="checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Object Oriented Programming</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Relevant Coursework</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Data Structures & Algorithims</h3>
+                    <p>Completed</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Design and Analysis of Algorithms</h3>
+                    <p>In Progress</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Requirement Analysis</h3>
+                    <p>In Progress</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Databases</h3>
+                    <p>Completed</p>
+                  </div>
+                </article>
+
+                <article>
+                    <img
+                      src="checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Programming Paradigms</h3>
+                      <p>Completed</p>
+                    </div>
+                  </article>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+
+        <section id="projects">
+            <h1 class="title">Browse Some of My Projects</h1>
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="mealer_logo.png"
+                      alt="Mealer Android Application"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Mealer Android App</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/ABhangu59/Mealer.git'"
+                    >
+                      Github
+                    </button>
+                    
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="ransac.png"
+                      alt="Project 2 - Ransac"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">RANSAC Algorithims</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="wavelogo.png"
+                      alt="Project 3 Photo"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">WAAAVE</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/ABhangu59/WAAAVE.git'"
+                    >
+                      Github
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class ="outro" >
+                <h3>Like What You See?</h3>
+                <p>Feel free to take a look at some of my other projects, you can find more at my GitHub Repository and stay tuned, there are some new ones that are still work in progresses!</p>
+
+
+            </div>
+
+            </div>
+            <img
+              src="arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#contact'"
+            />
+          </section>
+
+          <section id="contact">
+            <h1 class="title">Get in Touch! <br /> Contact Me</h1>
+            <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                <img
+                  src="email.png"
+                  alt="Email icon"
+                  class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:abhan059@uottawa.ca">abhan059@uottawa.ca</a></p>
+              </div>
+              <div class="contact-info-container">
+                <img
+                  src="linkedin.png"
+                  alt="LinkedIn icon"
+                  class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/alirazabhangu/">LinkedIn</a></p>
+              </div>
+            </div>
+        
+            <div class ="outro" >
+                <h3>I am available to work for 5 months beginning January 2024!</h3>
+                <p>If you have a project you would like some help with or just want to say hi, <br/> feel free to message me anytime!</p>
+
+
+            </div>
+          </section>
+
+
+          <footer>
+            <nav>
+              <div class="nav-links-container">
+                <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+            <p>Copyright &#169; 2023 Ali Bhangu. All Rights Reserved. </p>
+            <p> <small>Special thanks to Ademir Alijagic for the help with guiding the webpage's development and inspiration</small></p>
+          </footer>
+
+    
+    <script src="script.js"></script>
+    </body>
+    </html>
