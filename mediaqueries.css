@@ -66,8 +66,9 @@
     }
     .about-containers,
     .contact-info-upper-container,
-    .btn-container {
+    .contact-btn {
       flex-wrap: wrap;
+      padding-top: 5px;
     }
     .contact-info-container {
       margin: 0;

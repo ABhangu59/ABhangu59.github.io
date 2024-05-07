@@ -218,8 +218,14 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 19;
   }
+
+.contact-info-btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 5px;
+}
   
   .btn {
     font-weight: 600;
@@ -234,7 +240,6 @@ section {
   .btn-color-2 {
     border: rgba(55, 55, 55, 0.423) 0.1rem solid;
   }
-
 
   .btn-color-1:hover,
   .btn-color-2:hover {
